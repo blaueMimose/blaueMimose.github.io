@@ -1,1 +1,152 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Beauty HTML5 Template</title>
+<!-- 
+
+Beauty Template
+
+http://www.templatemo.com/tm-519-beauty
+
+-->
+  <script>
+    // detect IE8 and above, and edge
+    if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+        alert('Please use Chrome or Firefox for best browsing experience!');
+    }
+  </script>
+
+  <!-- load CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">                                <!-- Font awesome -->
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="css/templatemo-style.css">                                     <!-- Templatemo style -->
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="container">
+    <div class="tm-top-bar"></div>
+
+    <!-- Welcome section -->
+    <section class="tm-welcome">
+
+      <div class="tm-welcome-left">
+        <!-- Logo -->
+        <div class="tm-logo">
+          <h1 class="tm-site-name">Vera</h1>
+        </div>
+        <div class="tm-welcome-content">
+          <!-- fa icons -->
+          <div class="tm-welcome-icons-container">
+            <i class="fas fa-crown fa-5x tm-welcome-icon"></i>
+            <i class="fas fa-heart fa-5x tm-welcome-icon"></i>
+          </div>
+
+          <h2 class="tm-mb-25">Deine Swipe Up Page!</h2>
+          <p class="tm-font-big">Lass doch einfach über WhatsApp weiterschreiben!
+        </div>
+      </div>
+      <div class="tm-welcome-right"></div>
+
+    </section>
+    <div class="tm-bar-2"></div>
+
+
+  <section class="row tm-section-pb">
+    <div class="col-md-12 tm-bg-accent tm-gallery-pad tm-gallery-container mx-auto">
+      <h2 class="text-center tm-mb-45">Image Gallery</h2>
+      <div class="grid tm-gallery">
+        <figure class="effect-lexi tm-gallery-item">
+          <img src="img/img-01.jpg" alt="Image" class="">
+          <figcaption>
+            <p>Orci varius natoque penatibus et magnis dis parturient montes.</p>
+          </figcaption>
+        </figure>
+        <figure class="effect-lexi tm-gallery-item">
+          <img src="img/img-02.jpg" alt="Image" class="">
+          <figcaption>
+            <p>Vivamus interdum a lectus non auctor. Aliquam placerat.</p>
+          </figcaption>
+        </figure>
+        <figure class="effect-lexi tm-gallery-item">
+          <img src="img/img-03.jpg" alt="Image" class="">
+          <figcaption>
+            <p>Maecenas quis risus sem. Fusce ac dolor in ipsum pretium.</p>
+          </figcaption>
+        </figure>
+        <figure class="effect-lexi tm-gallery-item">
+          <img src="img/img-04.jpg" alt="Image" class="">
+          <figcaption>
+            <p>In scelerisque tincidunt elit nec luctus. Curabitur.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="pt-4 pb-4">
+    <p class="text-center tm-text-light-dark">Copyright &copy; 2021 Toni
+    
+    | Design: <a rel="nofollow" href="http://templatemo.com" class="tm-text-light-dark">TemplateMo</a></p>
+  </footer>
+
+</div> <!-- container -->
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+
+  $(function(){
+    $('.tm-gallery').slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+    });
+  });
+
+</script>
+</body>
+</html>
